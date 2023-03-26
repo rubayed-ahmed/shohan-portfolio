@@ -1,11 +1,12 @@
 import React from "react";
 import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillYoutube,
-} from "react-icons/ai";
+  FaLinkedinIn,
+  FaGithub,
+  FaFacebook,
+} from "react-icons/fa";
 import deved from "../../../assets/dev-ed-wave.png";
 import "./Banner.css";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
 
@@ -19,7 +20,7 @@ const Banner = () => {
               Rubayed Ahmed
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-xl">
-              Developer and designer.
+              Developer and Designer.
             </h3>
             <p className="text-md py-5 leading-8 text-slate-400 dark:text-gray-200 max-w-xl mx-auto 
             md:text-lg">
@@ -27,7 +28,8 @@ const Banner = () => {
               needs. Join me down below and let's get cracking!
             </p>
             <div className="flex justify-center gap-6 py-3">
-              <button className="bg-rose-500 hover:bg-transparent border border-rose-500 transition-all duration-300 ease-linear py-2 px-6 rounded">Download CV</button>
+              <a className="bg-rose-500 hover:bg-transparent border border-rose-500 transition-all 
+              duration-300 ease-linear py-2 px-6 rounded" href="resume.pdf" download="resume.pdf">Resume</a>
               <button className="border border-rose-500 hover:bg-rose-500 transition-all duration-300 ease-linear py-2 px-6 rounded">Let's Talk</button>
             </div>
 
@@ -36,9 +38,12 @@ const Banner = () => {
               <img src={deved} layout="fill" objectFit="cover" alt="" className="mt-24"/>
             </div>
             <ul className="social absolute top-[50%]">
-                <li className="my-4 text-2xl text-rose-500 cursor-pointer hover:text-white transition-all duration-300 ease-linear"><AiFillLinkedin/></li>
-                <li className="my-4 text-2xl text-rose-500 cursor-pointer hover:text-white transition-all duration-300 ease-linear"><AiFillTwitterCircle/></li>
-                <li className="my-4 text-2xl text-rose-500 cursor-pointer hover:text-white transition-all duration-300 ease-linear"><AiFillYoutube/></li>
+                <Link to="https://www.linkedin.com/in/rubayed-ahmed-a7b49121b/" target="_blank" className="my-4 block text-2xl text-rose-500 cursor-pointer hover:text-white transition-all
+                 duration-300 ease-linear"><FaLinkedinIn/></Link>
+                <Link to="https://github.com/rubayed-ahmed" target="_blank" className="my-4 block text-2xl text-rose-500 cursor-pointer hover:text-white transition-all
+                 duration-300 ease-linear"><FaGithub/></Link>
+                <Link to="https://www.facebook.com/ahmrubayed/" target="_blank" className="my-4 block text-2xl text-rose-500 cursor-pointer hover:text-white transition-all 
+                duration-300 ease-linear"><FaFacebook/></Link>
             </ul>
           </div>
         </section>

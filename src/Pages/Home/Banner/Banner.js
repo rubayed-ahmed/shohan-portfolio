@@ -21,7 +21,7 @@ const Banner = () => {
             <h3 className="text-2xl py-2 dark:text-white md:text-xl">
               Developer and designer.
             </h3>
-            <p className="text-md py-5 leading-8 text-gray-200 dark:text-gray-200 max-w-xl mx-auto 
+            <p className="text-md py-5 leading-8 text-slate-400 dark:text-gray-200 max-w-xl mx-auto 
             md:text-lg">
               Freelancer providing services for programming and design content
               needs. Join me down below and let's get cracking!

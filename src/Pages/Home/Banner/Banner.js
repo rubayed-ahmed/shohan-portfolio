@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const Banner = () => {
 
   return (
-    <div>
+    <div id="home">
       <div className=" px-10 dark:bg-gray-900 md:px-20 lg:px-40 md:py-12">
         <section className="min-h-screen relative">
           <div className="text-center p-10 py-10">
@@ -38,11 +38,11 @@ const Banner = () => {
               <img src={deved} layout="fill" objectFit="cover" alt="" className="mt-24"/>
             </div>
             <ul className="social absolute top-[50%]">
-                <Link to="https://www.linkedin.com/in/rubayed-ahmed-a7b49121b/" target="_blank" className="my-4 block text-2xl text-rose-500 cursor-pointer hover:text-white transition-all
+                <Link to="https://www.linkedin.com/in/rubayed-ahmed-a7b49121b/" target="_blank" className="my-4 block sm:text-xl md:text-2xl text-rose-500 cursor-pointer hover:text-white transition-all
                  duration-300 ease-linear"><FaLinkedinIn/></Link>
-                <Link to="https://github.com/rubayed-ahmed" target="_blank" className="my-4 block text-2xl text-rose-500 cursor-pointer hover:text-white transition-all
+                <Link to="https://github.com/rubayed-ahmed" target="_blank" className="my-4 block sm:text-xl md:text-2xl text-rose-500 cursor-pointer hover:text-white transition-all
                  duration-300 ease-linear"><FaGithub/></Link>
-                <Link to="https://www.facebook.com/ahmrubayed/" target="_blank" className="my-4 block text-2xl text-rose-500 cursor-pointer hover:text-white transition-all 
+                <Link to="https://www.facebook.com/ahmrubayed/" target="_blank" className="my-4 block sm:text-xl md:text-2xl text-rose-500 cursor-pointer hover:text-white transition-all 
                 duration-300 ease-linear"><FaFacebook/></Link>
             </ul>
           </div>

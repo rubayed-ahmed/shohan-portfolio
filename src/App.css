@@ -7,3 +7,13 @@ body {
   background: #0e1129; 
   color: #fff;
 }
+
+/* .about-me {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(45deg,transparent, red, transparent);
+  display: grid;
+  place-items: center;
+  
+} */

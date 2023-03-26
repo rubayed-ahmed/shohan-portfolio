@@ -12,7 +12,7 @@ const Banner = () => {
 
   return (
     <div id="home">
-      <div className=" px-10 dark:bg-gray-900 md:px-20 lg:px-40 md:py-12">
+      <div className="px-10 md:px-20 lg:px-40 md:py-12">
         <section className="min-h-screen relative">
           <div className="text-center p-10 py-10">
             <span className="text-lg">Hello, I'm</span>
@@ -20,7 +20,7 @@ const Banner = () => {
               Rubayed Ahmed
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-xl">
-              Developer and Designer.
+              Web Developer and Designer.
             </h3>
             <p className="text-md py-5 leading-8 text-slate-400 dark:text-gray-200 max-w-xl mx-auto 
             md:text-lg">

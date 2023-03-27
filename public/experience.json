@@ -1,0 +1,38 @@
+[
+    {
+      "service_id": "01",
+      "icon_name": "FaCheckCircle",
+      "skill": "HTML",
+      "level": "Expert"
+    },
+    {
+      "service_id": "02",
+      "icon_name": "FaCheckCircle",
+      "skill": "CSS",
+      "level": "Expert"
+    },
+    {
+      "service_id": "03",
+      "icon_name": "FaCheckCircle",
+      "skill": "Javascript",
+      "level": "Expert"
+    },
+    {
+      "service_id": "04",
+      "icon_name": "FaCheckCircle",
+      "skill": "Bootstrap 5",
+      "level": "Expert"
+    },
+    {
+      "service_id": "05",
+      "icon_name": "FaCheckCircle",
+      "skill": "Tailwindcss",
+      "level": "Experienced"
+    },
+    {
+      "service_id": "06",
+      "icon_name": "FaCheckCircle",
+      "skill": "React",
+      "level": "Intermediate"
+    }
+  ]

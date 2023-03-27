@@ -1,0 +1,20 @@
+[
+    {
+      "service_id": "01",
+      "icon_name": "FaCheckCircle",
+      "skill": "Nodejs",
+      "level": "Expert"
+    },
+    {
+      "service_id": "02",
+      "icon_name": "FaCheckCircle",
+      "skill": "MongoDB",
+      "level": "Basic"
+    },
+    {
+      "service_id": "03",
+      "icon_name": "FaCheckCircle",
+      "skill": "ExpressJS",
+      "level": "Intermediate"
+    }
+  ]

@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FaAward, FaUsers, FaFolderOpen } from "react-icons/fa";
 import me from "../../../assets/me.jpg";
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
 
 const About = () => {
+  const [countOn, setCountOn] = useState(false);
+  const [about, setAbout] = useState()
+
+  useEffect(() => {
+    fetch('about.json')
+    .then(res => res.json())
+    .then(data => setAbout)
+  },[])
+
   return (
     <section id="about" className="px-10 md:px-20 lg:px-40 md:py-12 my-20">
       <div className="text-center">
@@ -14,21 +25,48 @@ const About = () => {
       <div className="grid grid-cols-2 gap-6 justify-center items-center mt-20">
         <div className="">
           <div className="w-[70%] h-96 rounded-3xl bg-gradient-to-r from-transparent to-rose-500 aspect-square">
-            <img src={me} className="w-full h-96 object-cover rounded-3xl rotate-[10deg] hover:rotate-0 overflow-hidden transition-all duration-200 ease-linear" alt="" />
+            <img
+              src={me}
+              className="w-full h-96 object-cover rounded-3xl rotate-[10deg] hover:rotate-0 overflow-hidden transition-all duration-200 ease-linear"
+              alt=""
+            />
           </div>
         </div>
         <div className="">
           <div className="grid grid-cols-3 gap-6 items-center text-center">
             <div className="bg-rose-500 px-12 py-8 rounded-2xl">
-              <FaAward className="w-full text-3xl" />
+              {/* <FaAward className="w-full text-3xl" />
               <h5 className="mt-4 mb-1 text-lg">Experience</h5>
-              <span>3 years+</span>
+              <span>3 years+</span> */}
+              {
+                about?.map(abt =>      <ScrollTrigger
+                  onEnter={() => setCountOn(true)}
+                  onExit={() => setCountOn(false)}>
+                  <div>
+                  <FaAward className="w-full text-3xl mb-3" />
+                  <span className="text-lg capitalize">Experience</span>
+                    <h1 className="text-2xl">
+                      {countOn && (
+                        <CountUp
+                          start={0}
+                          end={100}
+                          duration={2}
+                          delay={0}
+                        ></CountUp>
+                      )}
+                      %
+                    </h1>
+                  </div>
+                </ScrollTrigger>)
+              }
             </div>
+
             <div className="bg-rose-500 px-12 py-8 rounded-2xl">
               <FaUsers className="w-full text-3xl" />
               <h5 className="mt-4 mb-1 text-lg">Clients</h5>
               <span>220+</span>
             </div>
+
             <div className="bg-rose-500 px-12 py-8 rounded-2xl">
               <FaFolderOpen className="w-full text-3xl" />
               <h5 className="mt-4 mb-1 text-lg">Projects</h5>

@@ -6,13 +6,6 @@ import ScrollTrigger from "react-scroll-trigger";
 
 const About = () => {
   const [countOn, setCountOn] = useState(false);
-  const [about, setAbout] = useState();
-
-  useEffect(() => {
-    fetch("about.json")
-      .then((res) => res.json())
-      .then((data) => setAbout);
-  }, []);
 
   return (
     <section id="about" className="px-10 md:px-20 lg:px-40 md:py-12 my-20">
@@ -22,18 +15,20 @@ const About = () => {
           About me
         </h3>
       </div>
-      <div className="grid grid-cols-2 gap-6 justify-center items-center mt-20">
-        <div className="">
-          <div className="w-[70%] h-96 rounded-3xl bg-gradient-to-r from-transparent to-rose-500 aspect-square">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center mt-20">
+        <div className="mb-12 md:mb-0">
+          <div className="w-[70%] h-96 rounded-3xl bg-gradient-to-r from-transparent mx-auto
+          to-rose-500 aspect-square">
             <img
               src={me}
-              className="w-full h-96 object-cover rounded-3xl rotate-[10deg] hover:rotate-0 overflow-hidden transition-all duration-200 ease-linear"
+              className="w-full h-96 object-cover rounded-3xl rotate-[10deg] hover:rotate-0 overflow-hidden
+               transition-all duration-200 ease-linear"
               alt=""
             />
           </div>
         </div>
         <div className="">
-          <div className="grid grid-cols-3 gap-6 items-center text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center text-center">
             <div className="bg-rose-500 px-12 py-8 rounded-2xl">
               <ScrollTrigger
                 onEnter={() => setCountOn(true)}

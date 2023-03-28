@@ -3,6 +3,7 @@
       "project_name": "Courseella",
       "img": "https://i.ibb.co/wNkdq05/project1.png",
       "live": "https://assignment-10-21db1.web.app",
+      "desc":"An edtech website is an online platform that provides educational resources and tools for students, teachers, and learners of all ages. These websites offer various features such as online courses, video lectures, interactive quizzes, and digital textbooks to facilitate learning anytime and anywhere. Additionally, edtech websites often leverage technology to personalize learning experiences and promote student engagement.",
       "technology": [
         "ReacJs",
         "React-bootstrap",
@@ -36,6 +37,7 @@
       "project_name": "Doctors Portal",
       "img": "https://i.ibb.co/VgbQ9GB/doctors.png",
       "live": "https://doctors-portal-6abcb.web.app",
+      "desc": "A hospital service website is an online platform that provides information about healthcare services offered by a hospital or medical facility. These websites typically include details about the hospital's medical specialties, facilities, and staff, as well as information on how to schedule appointments and access patient resources. Hospital service websites also often feature patient portals where patients can view their medical records, communicate with their doctors, and manage their healthcare needs.",
       "technology": ["TailwindCss", "MongoDB", "Stripe", "ReactQuery", "DaisyUi"],
       "details": [
         {
@@ -62,6 +64,7 @@
       "project_name": "ProShoot",
       "img": "https://i.ibb.co/LJQm5N1/proshoot.png",
       "live": "https://proshoot-assignment-11.web.app",
+      "desc": "A photography service website is an online platform that offers photography services, such as wedding photography, portrait photography, and commercial photography. These websites showcase the photographer's portfolio, services, and pricing, as well as provide a way to contact the photographer to schedule a session. Some photography service websites also offer online galleries for clients to view and purchase their photos.",
       "technology": ["ReacJs", "TailwindCss", "ExpressJs", "NodeJs", "Firebase"],
       "details": [
         {

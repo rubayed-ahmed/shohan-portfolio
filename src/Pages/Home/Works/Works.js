@@ -57,8 +57,13 @@ const Works = () => {
               </div>
               <div className="mb-3 flex items-center justify-between px-1 md:items-start">
                 <div className="mb-2">
-                  <p className="text-lg font-bold text-navy-700">
-                    {project.project_name}
+                  <h3 className="text-lg font-bold text-navy-700">
+                    {project?.project_name}
+                  </h3>
+                  <p className="text-gray-400 text-xs leading-6">
+                    {project?.desc.length > 100 ? <>
+                    {project.desc.slice(0, 100) + "..."} 
+                    </> : project.desc.length} 
                   </p>
                 </div>
 

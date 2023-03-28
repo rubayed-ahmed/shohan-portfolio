@@ -18,7 +18,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <section className="px-10 md:px-20 lg:px-40 md:py-12 my-20">
+    <section className="px-10 md:px-20 lg:px-40 md:py-12 my-20" id="experience">
       <div className="text-center">
         <h6 className="capitalize text-xs">What skills i have</h6>
         <h3 className="text-3xl text-rose-500 font-bold mt-3 capitalize">

@@ -1,0 +1,87 @@
+[
+    {
+      "project_name": "Courseella",
+      "img": "https://i.ibb.co/wNkdq05/project1.png",
+      "live": "https://assignment-10-21db1.web.app",
+      "technology": [
+        "ReacJs",
+        "React-bootstrap",
+        "ExpressJs",
+        "NodeJs",
+        "Firebase"
+      ],
+      "details": [
+        {
+          "title": "Courseella is a online based learning platform. Where students can study online. This website has 24/7 support system.",
+          "features": [
+            "Dark and light mode system",
+            "Social google and password based authentication",
+            "Pdf button for print files"
+          ],
+          "technologies": [
+            "ReacJs",
+            "React-bootstrap",
+            "NodeJs",
+            "ExpressJs",
+            "Firebase",
+            "react-router",
+            "react-icons",
+            "google-font",
+            "react-pdf "
+          ]
+        }
+      ]
+    },
+    {
+      "project_name": "Doctors Portal",
+      "img": "https://i.ibb.co/VgbQ9GB/doctors.png",
+      "live": "https://doctors-portal-6abcb.web.app",
+      "technology": ["TailwindCss", "MongoDB", "Stripe", "ReactQuery", "DaisyUi"],
+      "details": [
+        {
+          "title": "Consulting a healthcare professional, buying medicine, ordering lab tests and improving your health and wellbeing, all can be done 24/7 with Doctors portal!",
+          "features": [
+            " React day picker implemented for select date ",
+            " Fancy modal for booking appointment",
+            " Firebase authentication system implemented"
+          ],
+          "technologies": [
+            "Vercel ",
+            "react-query",
+            "Stripe",
+            "react-router,",
+            "Firebase",
+            "MongoDB",
+            "ExpressJs",
+            "ReactJs"
+          ]
+        }
+      ]
+    },
+    {
+      "project_name": "ProShoot",
+      "img": "https://i.ibb.co/LJQm5N1/proshoot.png",
+      "live": "https://proshoot-assignment-11.web.app",
+      "technology": ["ReacJs", "TailwindCss", "ExpressJs", "NodeJs", "Firebase"],
+      "details": [
+        {
+          "title": "ProShoot is the world's fastest-growing photography website, covering every aspect of image-making, from DSLRs and photo editing to mobile photography and drones.",
+          "features": [
+            "React photo view implemented for select date ",
+            "MongoDB CRUD operation implemented ",
+            "Firebase authentication system implemented           "
+          ],
+          "technologies": [
+            " react-photo-view",
+            "Vercel",
+            "react-query",
+            "react-router,",
+            "Firebase",
+            "MongoDB",
+            "ExpressJs",
+            "ReactJs"
+          ]
+        }
+      ]
+    }
+  ]

@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { FaAward, FaUsers, FaFolderOpen } from "react-icons/fa";
-import me from "../../../assets/me.jpg";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 
@@ -20,7 +19,7 @@ const About = () => {
           <div className="w-[70%] h-96 rounded-3xl bg-gradient-to-r from-transparent mx-auto
           to-rose-500 aspect-square">
             <img
-              src={me}
+              src="https://i.ibb.co/HHC9rWw/341d877a7c26db6c341d877a7c26db6cpersonal.jpg"
               className="w-full h-96 object-cover rounded-3xl rotate-[10deg] hover:rotate-0 overflow-hidden
                transition-all duration-200 ease-linear"
               alt=""

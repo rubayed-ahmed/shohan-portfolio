@@ -17,7 +17,7 @@ const About = () => {
   return (
     <section id="about" className="px-10 md:px-20 lg:px-40 md:py-12 my-20">
       <div className="text-center">
-        <h6 className="capitalize text-sm">Get to know</h6>
+        <h6 className="capitalize text-xs">Get to know</h6>
         <h3 className="text-3xl text-rose-500 font-bold mt-3 capitalize">
           About me
         </h3>

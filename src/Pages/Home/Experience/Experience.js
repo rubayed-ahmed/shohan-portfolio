@@ -20,13 +20,15 @@ const Experience = () => {
   return (
     <section className="px-10 md:px-20 lg:px-40 md:py-12 my-20">
       <div className="text-center">
-        <h6 className="capitalize text-sm">What skills i have</h6>
+        <h6 className="capitalize text-xs">What skills i have</h6>
         <h3 className="text-3xl text-rose-500 font-bold mt-3 capitalize">
           Experience
         </h3>
       </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center mt-20">
-        <div className="border border-gray-400 h-96 rounded-3xl text-center">
+
+        <div className="border border-gray-500 h-96 rounded-3xl text-center">
           <h3 className="text-rose-500 font-bold my-6 text-xl">
             Frontend Development
           </h3>
@@ -45,7 +47,7 @@ const Experience = () => {
           </ul>
         </div>
 
-        <div className="border border-gray-400 h-96 rounded-3xl text-center">
+        <div className="border border-gray-500 h-96 rounded-3xl text-center">
           <h3 className="text-rose-500 font-bold my-6 text-xl">
             Backend Development
           </h3>
@@ -63,6 +65,7 @@ const Experience = () => {
             ))}
           </ul>
         </div>
+
       </div>
     </section>
   );

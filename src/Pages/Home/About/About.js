@@ -6,13 +6,13 @@ import ScrollTrigger from "react-scroll-trigger";
 
 const About = () => {
   const [countOn, setCountOn] = useState(false);
-  const [about, setAbout] = useState()
+  const [about, setAbout] = useState();
 
   useEffect(() => {
-    fetch('about.json')
-    .then(res => res.json())
-    .then(data => setAbout)
-  },[])
+    fetch("about.json")
+      .then((res) => res.json())
+      .then((data) => setAbout);
+  }, []);
 
   return (
     <section id="about" className="px-10 md:px-20 lg:px-40 md:py-12 my-20">
@@ -35,42 +35,72 @@ const About = () => {
         <div className="">
           <div className="grid grid-cols-3 gap-6 items-center text-center">
             <div className="bg-rose-500 px-12 py-8 rounded-2xl">
-              {/* <FaAward className="w-full text-3xl" />
-              <h5 className="mt-4 mb-1 text-lg">Experience</h5>
-              <span>3 years+</span> */}
-              {
-                about?.map(abt =>      <ScrollTrigger
-                  onEnter={() => setCountOn(true)}
-                  onExit={() => setCountOn(false)}>
-                  <div>
+              <ScrollTrigger
+                onEnter={() => setCountOn(true)}
+                onExit={() => setCountOn(false)}
+              >
+                <div>
                   <FaAward className="w-full text-3xl mb-3" />
                   <span className="text-lg capitalize">Experience</span>
-                    <h1 className="text-2xl">
-                      {countOn && (
-                        <CountUp
-                          start={0}
-                          end={100}
-                          duration={2}
-                          delay={0}
-                        ></CountUp>
-                      )}
-                      %
-                    </h1>
-                  </div>
-                </ScrollTrigger>)
-              }
+                  <h1 className="text-lg mt-1">
+                    {countOn && (
+                      <CountUp
+                        start={0}
+                        end={3}
+                        duration={2}
+                        delay={0}
+                      ></CountUp>
+                    )}
+                     years+
+                  </h1>
+                </div>
+              </ScrollTrigger>
             </div>
 
             <div className="bg-rose-500 px-12 py-8 rounded-2xl">
-              <FaUsers className="w-full text-3xl" />
-              <h5 className="mt-4 mb-1 text-lg">Clients</h5>
-              <span>220+</span>
+              <ScrollTrigger
+                onEnter={() => setCountOn(true)}
+                onExit={() => setCountOn(false)}
+              >
+                <div>
+                  <FaUsers className="w-full text-3xl" />
+                  <span className="text-lg capitalize">Clients</span>
+                  <h1 className="text-lg mt-1">
+                    {countOn && (
+                      <CountUp
+                        start={0}
+                        end={220}
+                        duration={2}
+                        delay={0}
+                      ></CountUp>
+                    )}
+                    +
+                  </h1>
+                </div>
+              </ScrollTrigger>
             </div>
 
             <div className="bg-rose-500 px-12 py-8 rounded-2xl">
-              <FaFolderOpen className="w-full text-3xl" />
-              <h5 className="mt-4 mb-1 text-lg">Projects</h5>
-              <span>120+</span>
+              <ScrollTrigger
+                onEnter={() => setCountOn(true)}
+                onExit={() => setCountOn(false)}
+              >
+                <div>
+                  <FaFolderOpen className="w-full text-3xl" />
+                  <span className="text-lg capitalize">Projects</span>
+                  <h1 className="text-lg mt-1">
+                    {countOn && (
+                      <CountUp
+                        start={0}
+                        end={18}
+                        duration={2}
+                        delay={0}
+                      ></CountUp>
+                    )}
+                    +
+                  </h1>
+                </div>
+              </ScrollTrigger>
             </div>
           </div>
           <p className="mt-6 mb-12 text-slate-300">

@@ -21,7 +21,7 @@ const Works = () => {
         </h3>
       </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-center mt-20 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center mt-20 gap-6">
           {
             projects?.map(project => <div className="!z-5 relative flex rounded-[20px] max-w-[300px] 
             border border-gray-500 bg-clip-border shadow-3xl shadow-shadow-500 flex-col w-full 

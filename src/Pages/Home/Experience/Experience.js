@@ -28,13 +28,13 @@ const Experience = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center mt-20">
 
-        <div className="border border-gray-500 rounded-3xl text-center">
+        <div className="border border-gray-500 rounded-3xl text-center min-h-full">
           <h3 className="text-rose-500 font-bold my-6 text-xl">
             Frontend Development
           </h3>
-          <ul className="px-12 grid grid-cols-1 md:grid-cols-2 justify-center">
+          <ul className="px-12 grid grid-cols-1 md:grid-cols-2 justify-center gap-x-6">
             {experience?.map((ex) => (
-            <li className="flex text-left gap-6 justify-start my-4">
+            <li className="flex text-left gap-3 lg:gap-6 justify-start my-4">
             <span className="text-rose-500 text-lg">
               <FaCheckCircle />
             </span>
@@ -47,7 +47,7 @@ const Experience = () => {
           </ul>
         </div>
 
-        <div className="border border-gray-500 rounded-3xl text-center">
+        <div className="border border-gray-500 rounded-3xl text-center min-h-full">
           <h3 className="text-rose-500 font-bold my-6 text-xl">
             Backend Development
           </h3>

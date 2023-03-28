@@ -16,8 +16,10 @@ const About = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center mt-20">
         <div className="mb-12 md:mb-0">
-          <div className="w-[70%] h-96 rounded-3xl bg-gradient-to-r from-transparent mx-auto
-          to-rose-500 aspect-square">
+          <div
+            className="w-[70%] h-96 rounded-3xl bg-gradient-to-r from-transparent mx-auto
+          to-rose-500 aspect-square"
+          >
             <img
               src="https://i.ibb.co/HHC9rWw/341d877a7c26db6c341d877a7c26db6cpersonal.jpg"
               className="w-full h-96 object-cover rounded-3xl rotate-[10deg] hover:rotate-0 overflow-hidden
@@ -45,7 +47,7 @@ const About = () => {
                         delay={0}
                       ></CountUp>
                     )}
-                     years+
+                    years+
                   </h1>
                 </div>
               </ScrollTrigger>
@@ -98,12 +100,14 @@ const About = () => {
             </div>
           </div>
           <p className="mt-6 mb-12 text-slate-300">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-            unde at cumque dignissimos, fugiat necessitatibus earum quibusdam
-            delectus sequi aspernatur eligendi numquam saepe deleniti minima ad
-            vero molestiae, ipsam repudiandae repellendus aut sit quis? Amet
-            tempore saepe minima commodi nam. Quaerat sed, distinctio optio
-            dolorem odio voluptate delectus nesciunt excepturi.
+            A web developer is a professional who is responsible for designing,
+            building, and maintaining websites. They use a variety of
+            programming languages, such as HTML, CSS, and JavaScript, to create
+            websites that are both functional and visually appealing.
+            <br /> <br /> Web developers work on projects that range from simple
+            websites to complex web applications. They collaborate with clients
+            and other team members to understand their needs and goals, and to
+            ensure that the website or application meets those requirements.
           </p>
           <a
             className="bg-rose-500 hover:bg-transparent border border-rose-500 transition-all 

@@ -28,11 +28,11 @@ const Experience = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center mt-20">
 
-        <div className="border border-gray-500 h-96 rounded-3xl text-center">
+        <div className="border border-gray-500 rounded-3xl text-center">
           <h3 className="text-rose-500 font-bold my-6 text-xl">
             Frontend Development
           </h3>
-          <ul className="px-12 grid grid-cols-2">
+          <ul className="px-12 grid grid-cols-1 md:grid-cols-2 justify-center">
             {experience?.map((ex) => (
             <li className="flex text-left gap-6 justify-start my-4">
             <span className="text-rose-500 text-lg">
@@ -47,11 +47,11 @@ const Experience = () => {
           </ul>
         </div>
 
-        <div className="border border-gray-500 h-96 rounded-3xl text-center">
+        <div className="border border-gray-500 rounded-3xl text-center">
           <h3 className="text-rose-500 font-bold my-6 text-xl">
             Backend Development
           </h3>
-          <ul className="px-12 grid grid-cols-2">
+          <ul className="px-12 grid grid-cols-1 md:grid-cols-2 justify-center">
             {exBackend?.map((ex) => (
             <li className="flex text-left gap-6 justify-start my-4">
             <span className="text-rose-500 text-lg">

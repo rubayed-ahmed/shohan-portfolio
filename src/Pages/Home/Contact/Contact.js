@@ -1,7 +1,33 @@
-import React from "react";
+import React, {useRef} from "react";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 import { FaEnvelope, FaFacebookMessenger, FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_673apfd",
+        "template_uone7ka",
+        form.current,
+        "BhjUssxBPE-QbzaMw"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success("Email sent");
+          form.reset()
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <section className="px-10 md:px-20 lg:px-40 md:py-12 my-20" id="contact">
       <div className="text-center">
@@ -38,12 +64,16 @@ const Contact = () => {
         </div>
 
         <div className="basis-2/4">
-          <form>
-            <input type="text" className="bg-transparent border border-rose-500 rounded w-full p-3" placeholder="Name"/>
-            <input type="text" className="bg-transparent border border-rose-500 rounded w-full p-3 my-6" placeholder="Email"/>
-            <textarea placeholder="Subject" cols="30" rows="10" className="bg-transparent border border-rose-500 rounded w-full p-3"></textarea>
-            <input type="submit" value="Send Message" className="bg-rose-500 hover:bg-transparent border border-rose-500 transition-all 
-              duration-300 ease-linear py-2 px-6 rounded cursor-pointer mt-3"/>
+          <form ref={form} onSubmit={sendEmail}>
+            <input type="text" name="user_name" className="bg-transparent border border-rose-500 
+            rounded w-full p-3" placeholder="Name"/>
+            <input type="email" name="user_email" className="bg-transparent border border-rose-500 
+            rounded w-full p-3 my-6" placeholder="Email"/>
+            <textarea placeholder="Subject" name="message" cols="30" rows="10" 
+            className="bg-transparent border border-rose-500 rounded w-full p-3"></textarea>
+            <input type="submit" value="Send Message" className="bg-rose-500 hover:bg-transparent 
+            border border-rose-500 transition-all duration-300 ease-linear py-2 px-6 rounded 
+            cursor-pointer mt-3"/>
           </form>
         </div>
       </div>

@@ -4,6 +4,8 @@ import Banner from "../Pages/Home/Banner/Banner";
 import About from "../Pages/Home/About/About";
 import Experience from "../Pages/Home/Experience/Experience";
 import Works from "../Pages/Home/Works/Works";
+import Contact from "../Pages/Home/Contact/Contact";
+
 
 const Main = () => {
 
@@ -14,6 +16,7 @@ const Main = () => {
         <About/>
         <Experience/>
         <Works/>
+        <Contact/>
     </div>
   );
 };

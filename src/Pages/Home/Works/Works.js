@@ -10,20 +10,18 @@ const Works = () => {
         .then(data => setProjects(data))
     },[])
 
-    console.log(projects)
-
   return (
     <section className="px-10 md:px-20 lg:px-40 md:py-12 my-20" id="works">
       <div className="text-center">
-        <h6 className="capitalize text-xs">My Recent Works</h6>
+        <h6 className="capitalize text-xs">My Recent</h6>
         <h3 className="text-3xl text-rose-500 font-bold mt-3 capitalize">
-          Portfolio
+          Projects
         </h3>
       </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center mt-20 gap-6">
           {
-            projects?.map(project => <div className="!z-5 relative flex rounded-[20px] max-w-[300px] 
+            projects?.map(project => <div className="!z-5 relative flex rounded-[20px] md:max-w-[300px] 
             border border-gray-500 bg-clip-border shadow-3xl shadow-shadow-500 flex-col w-full 
             !p-4 3xl:p-![18px] cursor-pointer">
             <div className="w-full">

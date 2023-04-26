@@ -30,7 +30,7 @@ const About = () => {
         </div>
         <div className="">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center text-center">
-            <div className="bg-rose-500 px-12 py-8 rounded-2xl">
+            <div className="bg-rose-500 py-8 rounded-2xl">
               <ScrollTrigger
                 onEnter={() => setCountOn(true)}
                 onExit={() => setCountOn(false)}
@@ -53,7 +53,7 @@ const About = () => {
               </ScrollTrigger>
             </div>
 
-            <div className="bg-rose-500 px-12 py-8 rounded-2xl">
+            <div className="bg-rose-500 py-8 rounded-2xl">
               <ScrollTrigger
                 onEnter={() => setCountOn(true)}
                 onExit={() => setCountOn(false)}
@@ -76,7 +76,7 @@ const About = () => {
               </ScrollTrigger>
             </div>
 
-            <div className="bg-rose-500 px-12 py-8 rounded-2xl">
+            <div className="bg-rose-500 py-8 rounded-2xl">
               <ScrollTrigger
                 onEnter={() => setCountOn(true)}
                 onExit={() => setCountOn(false)}

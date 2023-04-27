@@ -12,7 +12,7 @@ const About = () => {
     <section id="about" className="px-10 md:px-20 lg:px-40 md:py-12 my-20">
       <div className="text-center" data-aos="fade-up">
         <h6 className="capitalize text-xs">Get to know</h6>
-        <h3 className="text-3xl text-rose-500 font-bold mt-3 capitalize">
+        <h3 className="text-3xl text-[#58E3C4] font-bold mt-3 capitalize">
           About me
         </h3>
       </div>
@@ -20,7 +20,7 @@ const About = () => {
         <div className="mb-12 md:mb-0" data-aos="fade-right">
           <div
             className="w-[70%] h-96 rounded-3xl bg-gradient-to-r from-transparent mx-auto
-          to-rose-500 aspect-square"
+          to-[#58E3C4] aspect-square"
           >
             <img
               src="https://i.ibb.co/HHC9rWw/341d877a7c26db6c341d877a7c26db6cpersonal.jpg"
@@ -42,7 +42,7 @@ const About = () => {
               I also like sharing content related to the stuff that I have
               learned over the years in <strong>Web Development</strong> so it can help other
               people of the Dev Community. Feel free to Connect or Follow me on
-              my <Link tp="" className="text-rose-500 font-bold underline">Linkedin</Link> where I post useful content related to Web Development
+              my <Link tp="" className="text-[#58E3C4] font-bold underline">Linkedin</Link> where I post useful content related to Web Development
               and Programming
               <br /> <br/>
               I'm open to <strong>Job</strong> opportunities where I can contribute, learn and
@@ -51,7 +51,7 @@ const About = () => {
             </p>
           </div>
           <a
-            className="bg-rose-500 hover:bg-transparent border border-rose-500 transition-all 
+            className="bg-[#58E3C4] hover:bg-transparent hover:border text-black hover:text-white transition-all 
               duration-300 ease-linear py-2 px-6 rounded"
             href="/"
           >

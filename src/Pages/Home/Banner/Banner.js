@@ -17,7 +17,7 @@ const Banner = () => {
         <div className="relative">
           <div className="text-center p-10 py-10">
             <span className="text-lg">Hey, I'm</span>
-            <h2 className="text-4xl md:text-6xl py-2 text-rose-500 font-medium dark:text-rose-400">
+            <h2 className="text-4xl md:text-6xl py-2 text-[#58E3C4] font-medium dark:text-rose-400">
               Salahddin Khan Shohan
             </h2>
             <h3 className="text-md md:text-xl py-2 dark:text-white">
@@ -33,15 +33,15 @@ const Banner = () => {
             </p>
             <div className="flex justify-center gap-6 py-3">
               <a
-                className="bg-rose-500 hover:bg-transparent border border-rose-500 transition-all 
-              duration-300 ease-linear py-2 px-6 rounded"
+                className="bg-[#58E3C4] text-black transition-all 
+              duration-300 ease-linear py-2 px-6 rounded "
                 href="resume.pdf"
                 download="resume.pdf">
                 Resume
               </a>
               <a
                 href="/#works"
-                className="border border-rose-500 hover:bg-rose-500 transition-all duration-300 ease-linear py-2 px-6 rounded"
+                className="border text-[#58E3C4] hover:bg-[#58E3C4] hover:text-black transition-all duration-300 ease-linear py-2 px-6 rounded"
               >
                 Projects
               </a>
@@ -49,7 +49,7 @@ const Banner = () => {
 
             <div
               data-aos="fade-top"
-              className="mx-auto bg-gradient-to-b from-rose-500 rounded-full w-80 h-80 
+              className="mx-auto bg-gradient-to-b from-[#58E3C4] rounded-full w-80 h-80 
             relative overflow-hidden mt-8 md:h-96 md:w-96"
             >
               <img
@@ -65,7 +65,7 @@ const Banner = () => {
               <Link
                 to="https://www.linkedin.com/in/rubayed-ahmed-a7b49121b/"
                 target="_blank"
-                className="my-4 block text-xl md:text-2xl text-rose-500 cursor-pointer hover:text-white transition-all
+                className="my-4 block text-xl md:text-2xl text-[#58E3C4] cursor-pointer hover:text-white transition-all
                  duration-300 ease-linear"
               >
                 <FaLinkedinIn />
@@ -73,7 +73,7 @@ const Banner = () => {
               <Link
                 to="https://github.com/rubayed-ahmed"
                 target="_blank"
-                className="my-4 block text-xl md:text-2xl text-rose-500 cursor-pointer hover:text-white transition-all
+                className="my-4 block text-xl md:text-2xl text-[#58E3C4] cursor-pointer hover:text-white transition-all
                  duration-300 ease-linear"
               >
                 <FaGithub />
@@ -81,7 +81,7 @@ const Banner = () => {
               <Link
                 to="https://www.facebook.com/ShohanKhanDBZ"
                 target="_blank"
-                className="my-4 block text-xl md:text-2xl text-rose-500 cursor-pointer hover:text-white transition-all 
+                className="my-4 block text-xl md:text-2xl text-[#58E3C4] cursor-pointer hover:text-white transition-all 
                 duration-300 ease-linear"
               >
                 <FaFacebook />

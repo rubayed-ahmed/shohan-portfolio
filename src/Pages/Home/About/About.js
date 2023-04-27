@@ -1,34 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaAward, FaUsers, FaFolderOpen } from "react-icons/fa";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
   const [countOn, setCountOn] = useState(false);
 
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
     <section id="about" className="px-10 md:px-20 lg:px-40 md:py-12 my-20">
-      <div className="text-center">
+      <div className="text-center" data-aos="fade-up">
         <h6 className="capitalize text-xs">Get to know</h6>
         <h3 className="text-3xl text-rose-500 font-bold mt-3 capitalize">
           About me
         </h3>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center mt-20">
-        <div className="mb-12 md:mb-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center mt-20" >
+        <div className="mb-12 md:mb-0" data-aos="fade-right">
           <div
             className="w-[70%] h-96 rounded-3xl bg-gradient-to-r from-transparent mx-auto
-          to-rose-500 aspect-square"
-          >
+          to-rose-500 aspect-square">
             <img
               src="https://i.ibb.co/HHC9rWw/341d877a7c26db6c341d877a7c26db6cpersonal.jpg"
               className="w-full h-96 object-cover rounded-3xl rotate-[10deg] hover:rotate-0 overflow-hidden
-               transition-all duration-200 ease-linear"
+               transition-all duration-200 ease-linear cursor-pointer"
               alt=""
             />
           </div>
         </div>
-        <div className="">
+
+        <div data-aos="fade-left">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center text-center">
             <div className="bg-rose-500 py-8 rounded-2xl">
               <ScrollTrigger

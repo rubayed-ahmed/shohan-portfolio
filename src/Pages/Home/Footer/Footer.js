@@ -4,7 +4,7 @@ import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 const Footer = () => {
     return (
         <footer className="px-10 md:px-20 lg:px-40 md:py-24 text-center bg-rose-500">
-            <h3 className="text-3xl py-8">Rubayed Ahmed</h3>
+            <h3 className="text-3xl py-8">Salahddin Khan Shohan</h3>
             <ul className="flex flex-col md:flex-row items-center justify-center md:my-12 gap-3 md:gap-12">
                 <a href="/#home" className="cursor-pointer">Home</a>
                 <a href="/#about" className="cursor-pointer">About</a>
@@ -17,7 +17,7 @@ const Footer = () => {
                 <span className="bg-white text-rose-500 p-3 rounded-lg text-xl"><FaLinkedin/></span>
                 <span className="bg-white text-rose-500 p-3 rounded-lg text-xl"><FaInstagram/></span>
             </div>
-            <p className="pt-6"> © Rubayed Ahmed | All Right Reserved</p>
+            <p className="pt-6"> © Salahddin Khan Shohan | All Right Reserved</p>
         </footer>
     );
 };

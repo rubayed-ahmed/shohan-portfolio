@@ -1,5 +1,5 @@
 import React from "react";
-import { FaHome, FaUserAlt, FaBook } from "react-icons/fa";
+import { FaHome, FaUserAlt, FaBook, FaFolderOpen, FaPhoneAlt } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -29,18 +29,18 @@ const Header = () => {
         <FaBook />
       </a>
       <a
+        href="/#works"
+        className="bg-transparent py-2 px-4 rounded-[50%] text-lg hover:text-rose-500 
+            transition-all duration-200 ease-linear"
+      >
+        <FaFolderOpen />
+      </a>
+      <a
         href="/#contact"
         className="bg-transparent py-2 px-4 rounded-[50%] text-lg hover:text-rose-500 
             transition-all duration-200 ease-linear"
       >
-        <FaUserAlt />
-      </a>
-      <a
-        href="/#about"
-        className="bg-transparent py-2 px-4 rounded-[50%] text-lg hover:text-rose-500 
-            transition-all duration-200 ease-linear"
-      >
-        <FaHome />
+        <FaPhoneAlt />
       </a>
     </nav>
   );

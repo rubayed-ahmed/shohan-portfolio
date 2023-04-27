@@ -1,9 +1,15 @@
-import React, {useRef} from "react";
+import React, {useRef, useEffect} from "react";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import { FaEnvelope, FaFacebookMessenger, FaWhatsapp } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -30,16 +36,15 @@ const Contact = () => {
 
   return (
     <section className="px-10 md:px-20 lg:px-40 md:py-12 my-20" id="contact">
-      <div className="text-center">
-        <h6 className="capitalize text-xs">My Recent Works</h6>
+      <div className="text-center" data-aos="fade-up">
+        <h6 className="capitalize text-xs">Connect with me</h6>
         <h3 className="text-3xl text-rose-500 font-bold mt-3 capitalize">
-          Portfolio
+          Contact
         </h3>
       </div>
 
       <div className="flex justify-center flex-col md:flex-row gap-12 mt-12">
-        <div className="basis-1/4">
-
+        <div className="basis-1/4"  data-aos="fade-right">
           <div className="bg-rose-500 hover:bg-transparent border border-rose-500 transition-all duration-200 ease-linear cursor-pointer py-8 px-8 rounded-xl flex flex-col items-center justify-center">
             <span className="text-2xl mb-4"><FaFacebookMessenger/></span>
             <p className-="text-lg">Messenger</p>
@@ -63,7 +68,7 @@ const Contact = () => {
 
         </div>
 
-        <div className="basis-2/4">
+        <div className="basis-2/4" data-aos="fade-left">
           <form ref={form} onSubmit={sendEmail}>
             <input type="text" name="user_name" className="bg-transparent border border-rose-500 
             rounded w-full p-3" placeholder="Name"/>

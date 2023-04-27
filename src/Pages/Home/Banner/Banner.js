@@ -1,16 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaLinkedinIn, FaGithub, FaFacebook } from "react-icons/fa";
 import deved from "../../../assets/dev-ed-wave.png";
 import "./Banner.css";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Banner = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div id="home">
+    <section id="home" data-aos="fade-down">
       <div className="md:px-20 lg:px-40 md:py-12">
-        <section className="relative">
+        <div className="relative">
           <div className="text-center p-10 py-10">
-            <span className="text-lg">Hello, I'm</span>
+            <span className="text-lg">Hey, I'm</span>
             <h2 className="text-4xl md:text-6xl py-2 text-rose-500 font-medium dark:text-rose-400">
               Salahddin Khan Shohan
             </h2>
@@ -21,24 +27,28 @@ const Banner = () => {
               className="text-md py-5 leading-8 text-slate-400 dark:text-gray-200 max-w-xl mx-auto 
             md:text-lg"
             >
-              Freelancer providing services for programming and design content
-              needs. Join me down below and let's get cracking!
+              A Frontend focused Web Developer building the Frontend of Websites
+              and Web Applications that leads to the success of the overall
+              product
             </p>
             <div className="flex justify-center gap-6 py-3">
               <a
                 className="bg-rose-500 hover:bg-transparent border border-rose-500 transition-all 
               duration-300 ease-linear py-2 px-6 rounded"
                 href="resume.pdf"
-                download="resume.pdf"
-              >
+                download="resume.pdf">
                 Resume
               </a>
-              <button className="border border-rose-500 hover:bg-rose-500 transition-all duration-300 ease-linear py-2 px-6 rounded">
-                Let's Talk
-              </button>
+              <a
+                href="/#works"
+                className="border border-rose-500 hover:bg-rose-500 transition-all duration-300 ease-linear py-2 px-6 rounded"
+              >
+                Projects
+              </a>
             </div>
 
             <div
+              data-aos="fade-top"
               className="mx-auto bg-gradient-to-b from-rose-500 rounded-full w-80 h-80 
             relative overflow-hidden mt-8 md:h-96 md:w-96"
             >
@@ -50,6 +60,7 @@ const Banner = () => {
                 className="mt-24"
               />
             </div>
+
             <ul className="social absolute top-[50%] left-[5%] md:left-0">
               <Link
                 to="https://www.linkedin.com/in/rubayed-ahmed-a7b49121b/"
@@ -77,9 +88,9 @@ const Banner = () => {
               </Link>
             </ul>
           </div>
-        </section>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

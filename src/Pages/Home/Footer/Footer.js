@@ -18,7 +18,7 @@ const Footer = () => {
         //    </div>
         //    <p className="pt-6"> © Salahddin Khan Shohan | All Right Reserved</p>
         // </footer>
-        <footer className="px-10 pb-24 text-center">Designed & Built by Shohan</footer>
+        <footer className="px-10 pb-24 text-center">Designed & Built by Shohan 2023</footer>
     );
 };
 

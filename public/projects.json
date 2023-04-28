@@ -1,90 +1,47 @@
 [
-    {
-      "project_name": "Courseella",
-      "img": "https://i.ibb.co/1RMhv5k/Website-Laptop-Mockup-Instagram-Post.png",
-      "live": "https://assignment-10-21db1.web.app",
-      "desc":"An edtech website is an online platform that provides educational resources and tools for students, teachers, and learners of all ages. These websites offer various features such as online courses, video lectures, interactive quizzes, and digital textbooks to facilitate learning anytime and anywhere. Additionally, edtech websites often leverage technology to personalize learning experiences and promote student engagement.",
-      "technology": [
-        "ReacJs",
-        "React-bootstrap",
-        "ExpressJs",
-        "NodeJs",
-        "Firebase"
-      ],
-      "details": [
-        {
-          "title": "Courseella is a online based learning platform. Where students can study online. This website has 24/7 support system.",
-          "features": [
-            "Dark and light mode system",
-            "Social google and password based authentication",
-            "Pdf button for print files"
-          ],
-          "technologies": [
-            "ReacJs",
-            "React-bootstrap",
-            "NodeJs",
-            "ExpressJs",
-            "Firebase",
-            "react-router",
-            "react-icons",
-            "google-font",
-            "react-pdf "
-          ]
-        }
-      ]
-    },
-    {
-      "project_name": "Doctors Portal",
-      "img": "https://i.ibb.co/1RMhv5k/Website-Laptop-Mockup-Instagram-Post.png",
-      "live": "https://doctors-portal-6abcb.web.app",
-      "desc": "A hospital service website is an online platform that provides information about healthcare services offered by a hospital or medical facility. These websites typically include details about the hospital's medical specialties, facilities, and staff, as well as information on how to schedule appointments and access patient resources. Hospital service websites also often feature patient portals where patients can view their medical records, communicate with their doctors, and manage their healthcare needs.",
-      "technology": ["TailwindCss", "MongoDB", "Stripe", "ReactQuery", "DaisyUi"],
-      "details": [
-        {
-          "title": "Consulting a healthcare professional, buying medicine, ordering lab tests and improving your health and wellbeing, all can be done 24/7 with Doctors portal!",
-          "features": [
-            " React day picker implemented for select date ",
-            " Fancy modal for booking appointment",
-            " Firebase authentication system implemented"
-          ],
-          "technologies": [
-            "Vercel ",
-            "react-query",
-            "Stripe",
-            "react-router,",
-            "Firebase",
-            "MongoDB",
-            "ExpressJs",
-            "ReactJs"
-          ]
-        }
-      ]
-    },
-    {
-      "project_name": "ProShoot",
-      "img": "https://i.ibb.co/1RMhv5k/Website-Laptop-Mockup-Instagram-Post.png",
-      "live": "https://proshoot-assignment-11.web.app",
-      "desc": "A photography service website is an online platform that offers photography services, such as wedding photography, portrait photography, and commercial photography. These websites showcase the photographer's portfolio, services, and pricing, as well as provide a way to contact the photographer to schedule a session. Some photography service websites also offer online galleries for clients to view and purchase their photos.",
-      "technology": ["ReacJs", "TailwindCss", "ExpressJs", "NodeJs", "Firebase"],
-      "details": [
-        {
-          "title": "ProShoot is the world's fastest-growing photography website, covering every aspect of image-making, from DSLRs and photo editing to mobile photography and drones.",
-          "features": [
-            "React photo view implemented for select date ",
-            "MongoDB CRUD operation implemented ",
-            "Firebase authentication system implemented           "
-          ],
-          "technologies": [
-            " react-photo-view",
-            "Vercel",
-            "react-query",
-            "react-router,",
-            "Firebase",
-            "MongoDB",
-            "ExpressJs",
-            "ReactJs"
-          ]
-        }
-      ]
-    }
-  ]
+  {
+    "project_name": "Courseella",
+    "img": "https://i.ibb.co/1RMhv5k/Website-Laptop-Mockup-Instagram-Post.png",
+    "project_link": "https://assignment-10-21db1.web.app",
+    "github_client": "https://assignment-10-21db1.web.app",
+    "github_server": "https://assignment-10-21db1.web.app",
+    "project_overview":"Crown is a web template that I created targeting the restaurant and food industry for use for their own restaurant business and build trust and engagement with their customers by providing them with a better User Interface on the Web.By taking User Interface ideas by visiting different types of websites of the same industry and even visited platforms like dribble to get inspiration for building a good User Interface that will bring great results. Feel free to check out the Project by visiting the Live Link.",
+    "tools": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "AOS library",
+      "Firebase"
+    ]
+  },
+  {
+    "project_name": "Courseella",
+    "img": "https://i.ibb.co/1RMhv5k/Website-Laptop-Mockup-Instagram-Post.png",
+    "project_link": "https://assignment-10-21db1.web.app",
+    "github_client": "https://assignment-10-21db1.web.app",
+    "github_server": "https://assignment-10-21db1.web.app",
+    "project_overview":"Crown is a web template that I created targeting the restaurant and food industry for use for their own restaurant business and build trust and engagement with their customers by providing them with a better User Interface on the Web.By taking User Interface ideas by visiting different types of websites of the same industry and even visited platforms like dribble to get inspiration for building a good User Interface that will bring great results. Feel free to check out the Project by visiting the Live Link.",
+    "tools": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "AOS library",
+      "Firebase"
+    ]
+  },
+  {
+    "project_name": "Courseella",
+    "img": "https://i.ibb.co/1RMhv5k/Website-Laptop-Mockup-Instagram-Post.png",
+    "project_link": "https://assignment-10-21db1.web.app",
+    "github_client": "https://assignment-10-21db1.web.app",
+    "github_server": "https://assignment-10-21db1.web.app",
+    "project_overview":"Crown is a web template that I created targeting the restaurant and food industry for use for their own restaurant business and build trust and engagement with their customers by providing them with a better User Interface on the Web.By taking User Interface ideas by visiting different types of websites of the same industry and even visited platforms like dribble to get inspiration for building a good User Interface that will bring great results. Feel free to check out the Project by visiting the Live Link.",
+    "tools": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "AOS library",
+      "Firebase"
+    ]
+  }
+]

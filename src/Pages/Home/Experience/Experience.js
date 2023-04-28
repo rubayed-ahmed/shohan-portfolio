@@ -12,13 +12,13 @@ const Experience = () => {
   }, [])
 
   useEffect(() => {
-    fetch("experience.json")
+    fetch("http://localhost:5000/experiences")
       .then((res) => res.json())
       .then((data) => setExperience(data));
   }, []);
 
   useEffect(() => {
-    fetch("exBackend.json")
+    fetch("http://localhost:5000/backendExperiences")
       .then((res) => res.json())
       .then((data) => setExBackend(data));
   }, []);

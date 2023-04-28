@@ -1,20 +1,22 @@
-import React, {useState, useEffect} from "react";
-import {Link} from "react-router-dom"
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Works = () => {
-    const [projects, setProjects] = useState();
+  const [projects, setProjects] = useState();
 
-    useEffect(() => {
-      AOS.init();
-    }, [])
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
-    useEffect(() => {
-        fetch('projects.json')
-        .then(res => res.json())
-        .then(data => setProjects(data))
-    },[])
+  useEffect(() => {
+    fetch("http://localhost:5000/projects")
+      .then((res) => res.json())
+      .then((data) => setProjects(data));
+  }, []);
+
+  console.log(projects);
 
   return (
     <section className="px-10 md:px-20 lg:px-40 md:py-12 my-20" id="works">
@@ -25,23 +27,34 @@ const Works = () => {
         </h3>
       </div>
 
-        <div className="mt-20" data-aos="fade-up">
-          {
-            projects?.map(project =>  <div className="flex gap-x-24 mb-24 items-center">
-            <div>
-              <img src={project?.img} alt="" className="max-w-[70vw] h-[50vh] rounded object-cover"/>
+      <div className="mt-20" data-aos="fade-up">
+        {projects?.map((project) => (
+          <div className="flex flex-col lg:flex-row justify-center gap-x-24 mb-24 items-center">
+            <div className="basis-[50%]">
+              <img
+                src={project?.img}
+                alt=""
+                className="max-w-[50vw] h-[50vh] rounded object-cover"
+              />
             </div>
-            <div>
-              <h2 className="text-2xl font-semibold">{project?.project_name}</h2>
-              <p className="text-slate-300 my-6 leading-8">{project?.desc.slice(0, 150)}</p>
-              <Link to=""   className="bg-[#58E3C4] hover:bg-transparent hover:border text-black hover:text-white transition-all 
-              duration-300 ease-linear py-2 px-6 rounded inline-block">Case Study</Link>
+            <div className="basis-[50%]">
+              <h2 className="text-2xl font-semibold">
+                {project?.project_name}
+              </h2>
+              <p className="text-slate-300 my-6 leading-8">
+                {project?.project_overview.slice(0, 150)}
+              </p>
+              <Link
+                to={`/project/${project?._id}`}
+                className="bg-[#58E3C4] hover:bg-transparent hover:border text-black hover:text-white transition-all 
+              duration-300 ease-linear py-2 px-6 rounded inline-block"
+              >
+                Case Study
+              </Link>
             </div>
-          </div>)
-          }
-         
-
-        </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };

@@ -12,13 +12,13 @@ const Experience = () => {
   }, [])
 
   useEffect(() => {
-    fetch("http://localhost:5000/experiences")
+    fetch("https://shohan-portfolio-server.vercel.app/experiences")
       .then((res) => res.json())
       .then((data) => setExperience(data));
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:5000/backendExperiences")
+    fetch("https://shohan-portfolio-server.vercel.app/backendExperiences")
       .then((res) => res.json())
       .then((data) => setExBackend(data));
   }, []);

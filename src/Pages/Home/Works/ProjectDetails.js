@@ -2,6 +2,7 @@ import React from "react";
 import { useLoaderData } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Header from "../../Shared/Header/Header";
+import ScrollToTop from "../../ScrollToTop"
 
 function ProjectDetails() {
   const project = useLoaderData();
@@ -18,6 +19,7 @@ function ProjectDetails() {
   console.log(project);
   return (
     <section className="px-10 md:px-20 lg:px-40 md:py-12 my-20">
+      <ScrollToTop/>
       <Header />
       <div className="text-center">
         <h3 className="text-5xl text-center">{project_name}</h3>

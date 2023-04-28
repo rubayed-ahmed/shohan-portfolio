@@ -41,7 +41,8 @@ function ProjectDetails() {
         <img src={img} alt="Project" className="h-full w-full mt-32" />
         <>
           <h4 className="text-2xl my-12">Project Overview</h4>
-          <p>{project_overview}</p>
+          <p className="text-slate-400 leading-8 whitespace-pre-wrap">{JSON.stringify(project_overview, null, 2)}</p>
+          <p className="text-slate-400 mt-6 ">Feel free to check out the Project by visiting the Live Link.</p>
         </>
         <>
           <h4 className="text-2xl my-12">Tools used</h4>
@@ -56,14 +57,14 @@ function ProjectDetails() {
         <>
           <h4 className="text-2xl my-12">See Live</h4>
           <Link
-            to={project_link}
+            to={github_client}
             className="bg-[#58E3C4] text-black transition-all 
               duration-300 ease-linear py-2 px-6 rounded mr-4"
           >
             Github Client
           </Link>
           <Link
-            to={project_link}
+            to={github_server}
             className="bg-[#58E3C4] text-black transition-all 
               duration-300 ease-linear py-2 px-6 rounded "
           >

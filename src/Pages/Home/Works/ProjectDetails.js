@@ -23,7 +23,7 @@ function ProjectDetails() {
       <Header />
       <div className="text-center">
         <h3 className="text-5xl text-center">{project_name}</h3>
-        <p className="my-12 w-4/5 mx-auto leading-8">
+        <p className="my-12 lg:w-4/5 mx-auto leading-8">
           This page contains the case study of{" "}
           <span className="font-bold">{project_name}</span> Open-Source Project
           which includes the Project Overview, Tools Used and Live Links to the
@@ -46,7 +46,7 @@ function ProjectDetails() {
         </>
         <>
           <h4 className="text-2xl my-12">Tools used</h4>
-          <ul className="flex gap-6">
+          <ul className="flex flex-wrap gap-3 lg:gap-6">
             {tools?.map((tool) => (
               <li className="bg-[#EBEBEB] text-black py-3 px-6 rounded">
                 {tool}

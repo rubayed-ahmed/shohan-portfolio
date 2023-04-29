@@ -19,7 +19,7 @@ const Works = () => {
   console.log(projects);
 
   return (
-    <section className="px-10 md:px-20 lg:px-40 md:py-12 my-20" id="works">
+    <section className="px-6 md:px-20 lg:px-40 md:py-12 my-20" id="works">
       <div className="text-center" data-aos="fade-up">
         <h6 className="capitalize text-xs">My Recent</h6>
         <h3 className="text-3xl text-[#58E3C4] font-bold mt-3 capitalize">
@@ -30,15 +30,15 @@ const Works = () => {
       <div className="mt-20" data-aos="fade-up">
         {projects?.map((project) => (
           <div className="flex flex-col lg:flex-row justify-center gap-x-24 mb-24 items-center">
-            <div className="basis-[50%]">
+            <div className="lg:basis-[50%]">
               <img
                 src={project?.img}
                 alt=""
-                className="max-w-[50vw] h-[50vh] rounded object-cover"
+                className="lg:max-w-[50vw] h-[50vh] rounded object-cover"
               />
             </div>
-            <div className="basis-[50%]">
-              <h2 className="text-2xl font-semibold">
+            <div className="lg:basis-[50%] text-center md:text-left">
+              <h2 className="text-2xl font-semibold mt-12 lg:mt-0">
                 {project?.project_name}
               </h2>
               <p className="text-slate-300 my-6 leading-8">

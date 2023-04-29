@@ -17,17 +17,17 @@ const Banner = () => {
         <div className="relative">
           <div className="text-center p-10 py-10">
             <span className="text-lg">Hey, I'm</span>
-            <h2 className="text-4xl md:text-6xl py-2 text-[#58E3C4] font-medium dark:text-rose-400">
+            <h2 className="text-4xl md:text-6xl py-2 text-[#58E3C4] font-medium leading-8 capitalize">
               Salahddin Khan Shohan
             </h2>
             <h3 className="text-md md:text-xl py-2 dark:text-white">
-              Author, Writer, Programmer
+              Web Designer & Developer
             </h3>
             <p
               className="text-md py-5 leading-8 text-slate-400 dark:text-gray-200 max-w-xl mx-auto 
             md:text-lg"
             >
-              A Frontend focused Web Developer building the Frontend of Websites
+              A Fullstack Web Developer building the Frontend of Websites
               and Web Applications that leads to the success of the overall
               product
             </p>
@@ -50,7 +50,7 @@ const Banner = () => {
             <div
               data-aos="fade-top"
               className="mx-auto bg-gradient-to-b from-[#58E3C4] rounded-full w-80 h-80 
-            relative overflow-hidden mt-8 md:h-96 md:w-96"
+            relative overflow-hidden mt-8 md:h-96 md:w-96 "
             >
               <img
                 src={deved}

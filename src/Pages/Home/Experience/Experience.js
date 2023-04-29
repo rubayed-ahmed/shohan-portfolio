@@ -24,7 +24,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <section className="px-10 md:px-20 lg:px-40 md:py-12 my-20" id="experience">
+    <section className="px-6 md:px-20 lg:px-40 md:py-12 my-20" id="experience">
       <div className="text-center" data-aos="fade-up">
         <h6 className="capitalize text-xs">What skills i have</h6>
         <h3 className="text-3xl text-[#58E3C4] font-bold mt-3 capitalize">
@@ -32,7 +32,7 @@ const Experience = () => {
         </h3>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center mt-20" data-aos="fade-up">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-center items-center mt-20" data-aos="fade-up">
 
         <div className="border border-gray-400 rounded-3xl text-center min-h-full" >
           <h3 className="text-[#58E3C4] font-bold my-6 text-xl">

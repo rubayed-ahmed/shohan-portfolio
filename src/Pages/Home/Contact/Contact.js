@@ -35,7 +35,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="px-10 md:px-20 lg:px-40 md:py-12 my-20" id="contact">
+    <section className="px-6 md:px-20 lg:px-40 md:py-12 my-20" id="contact">
       <div className="text-center" data-aos="fade-up">
         <h6 className="capitalize text-xs">Connect with me</h6>
         <h3 className="text-3xl text-[#58E3C4] font-bold mt-3 capitalize">
@@ -43,8 +43,8 @@ const Contact = () => {
         </h3>
       </div>
 
-      <div className="flex justify-center flex-col md:flex-row gap-12 mt-12">
-        <div className="basis-1/4"  data-aos="fade-right">
+      <div className="flex justify-center flex-col md:flex-row gap-12 mt-12 overflow-hidden">
+        <div className="md:basis-1/4"  data-aos="fade-right">
           <div className="border border-[#58E3C4] transition-white-200 ease-linear cursor-pointer py-8 px-8 rounded-xl flex flex-col items-center justify-center">
             <span className="text-2xl mb-4"><FaFacebookMessenger/></span>
             <p className-="text-lg">Messenger</p>
@@ -68,7 +68,7 @@ const Contact = () => {
 
         </div>
 
-        <div className="basis-2/4" data-aos="fade-left">
+        <div className="md:basis-2/4" data-aos="fade-left">
           <form ref={form} onSubmit={sendEmail}>
             <input type="text" name="user_name" className="bg-transparent border border-[#58E3C4] 
             rounded w-full p-3" placeholder="Name"/>

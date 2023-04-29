@@ -9,7 +9,7 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" className="px-10 md:px-20 lg:px-40 md:py-12 my-20">
+    <section id="about" className="px-6 md:px-20 lg:px-40 md:py-12 my-20 overflow-hidden">
       <div className="text-center" data-aos="fade-up">
         <h6 className="capitalize text-xs">Get to know</h6>
         <h3 className="text-3xl text-[#58E3C4] font-bold mt-3 capitalize">
@@ -23,7 +23,7 @@ const About = () => {
           to-[#58E3C4] aspect-square"
           >
             <img
-              src="https://i.ibb.co/Vx9WzpN/shohan.jpg"
+              src="https://i.ibb.co/mvFQ4Qp/shohan.jpg"
               className="w-full h-96 object-cover rounded-3xl rotate-[10deg] hover:rotate-0 overflow-hidden
                transition-all duration-200 ease-linear cursor-pointer"
               alt=""
@@ -53,7 +53,7 @@ const About = () => {
           <a
             className="bg-[#58E3C4] hover:bg-transparent hover:border text-black hover:text-white transition-all 
               duration-300 ease-linear py-2 px-6 rounded"
-            href="/"
+            href="/#contact"
           >
             Let's Talk
           </a>

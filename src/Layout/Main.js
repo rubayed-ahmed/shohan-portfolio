@@ -5,7 +5,7 @@ import About from "../Pages/Home/About/About";
 import Experience from "../Pages/Home/Experience/Experience";
 import Works from "../Pages/Home/Works/Works";
 import Contact from "../Pages/Home/Contact/Contact";
-import Footer from "../Pages/Home/Footer/Footer";
+import Footer from "../Pages/Shared/Footer/Footer";
 import GoToTop from "../Pages/GoToTop";
 
 const Main = () => {

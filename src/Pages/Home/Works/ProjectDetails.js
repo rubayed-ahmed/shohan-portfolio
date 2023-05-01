@@ -3,6 +3,7 @@ import { useLoaderData } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Header from "../../Shared/Header/Header";
 import ScrollToTop from "../../ScrollToTop"
+import Footer from "../../Shared/Footer/Footer"
 
 function ProjectDetails() {
   const project = useLoaderData();
@@ -72,6 +73,7 @@ function ProjectDetails() {
           </Link>
         </>
       </div>
+      <Footer/>
     </section>
   );
 }

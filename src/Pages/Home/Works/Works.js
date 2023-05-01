@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { fetchDataFromApi } from "../../../utils/api";
 
 const Works = () => {
   const [projects, setProjects] = useState();
@@ -16,7 +17,7 @@ const Works = () => {
       .then((data) => setProjects(data));
   }, []);
 
-  console.log(projects);
+
 
   return (
     <section className="px-6 md:px-20 lg:px-40 md:py-12 my-20" id="works">
